@@ -13,7 +13,7 @@
         }
         @include respond($bp-mobile) {
             grid-column: 1/5;
-            padding: 0 2rem;
+            padding: 0 1.25rem;
         }
     }
     &--clients-list {
@@ -27,7 +27,7 @@
         }
         @include respond($bp-mobile) {
             grid-column: 1/5;
-            padding: 0 2rem;
+            padding: 0 1.25rem;
         }
     }
     &--clients-list {

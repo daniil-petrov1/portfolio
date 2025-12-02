@@ -40,7 +40,7 @@
             font-size: 1rem;
         }
         @include respond($bp-mobile) {
-            font-size: 3.5vw;
+            font-size: 5vw;
         }
         @include respond($bp-mobileS) {
             font-size: 5.5vw;

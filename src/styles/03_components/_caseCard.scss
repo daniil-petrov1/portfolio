@@ -23,7 +23,7 @@
             padding: $spacing-3xl 0;
         }
         @include respond($bp-mobile) {
-            padding: $spacing-2xl 0;
+            padding: $spacing-2xl $spacing-m;
         }
         @include respond($bp-mobileS) {
             padding: $spacing-xl 0;

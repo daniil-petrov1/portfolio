@@ -32,7 +32,7 @@ body {
     }
     @include respond($bp-mobile) {
         grid-template-columns: repeat(4, 1fr);
-        grid-row-gap: $spacing-s;
+        grid-row-gap: $spacing-xl;
         padding: 0 $spacing-s;
     }
     @include respond($bp-mobileS) {
@@ -54,9 +54,9 @@ body {
             grid-template-columns: repeat(14, 1fr);
         }
         @include respond($bp-mobile) {
-            grid-template-columns: repeat(8, 1fr);
-            grid-row-gap: $spacing-s;
-            grid-column-gap: $spacing-s;
+            grid-template-columns: repeat(6, 1fr);
+            grid-row-gap: $spacing-xs;
+            grid-column-gap: $spacing-xs;
         }
     }
 }

@@ -13,7 +13,7 @@
         }
         @include respond($bp-mobile) {
             grid-column: 1/5;
-            padding: 0 2rem;
+            padding: 0 1.25rem;
         }
     }
 }
@@ -47,7 +47,7 @@
             font-size: 0.875rem;
         }
         @include respond($bp-mobile) {
-            font-size: 3vw;
+            font-size: 4vw;
         }
         @include respond($bp-mobileS) {
             font-size: 4.5vw;
@@ -102,7 +102,7 @@
             margin-bottom: 0!important;
         }
         @include respond($bp-mobile) {
-            font-size: 3vw;
+            font-size: 4vw;
             margin-bottom: 0!important;
         }
         @include respond($bp-mobileS) {
