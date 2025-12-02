@@ -33,6 +33,7 @@ body {
     @include respond($bp-mobile) {
         grid-template-columns: repeat(4, 1fr);
         grid-row-gap: $spacing-s;
+        padding: 0 $spacing-s;
     }
     @include respond($bp-mobileS) {
         grid-template-columns: repeat(4, 1fr);
