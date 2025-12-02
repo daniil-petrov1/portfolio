@@ -69,6 +69,8 @@
     font-weight: $font-weight-bold;
     line-height: 1;
     text-transform: uppercase;
+    mix-blend-mode: difference;
+    color: #fff;
     font-size: 4.375rem;
     letter-spacing: -0.07em;
     opacity: 0;

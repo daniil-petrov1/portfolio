@@ -4,6 +4,10 @@ html {
     font-style: 16px;
 }
 
+body {
+    background-color: var(--color-background-page);
+}
+
 .container {
     display: block;
     max-width: 1920px;
