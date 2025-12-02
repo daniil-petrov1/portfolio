@@ -1,0 +1,22 @@
+// Токены цветов
+$c-black: #000000;
+$c-white: #FFFFFF;
+$c-gray-900: #151515;
+$c-gray-700: #333333;
+$c-gray-500: #808080;
+$c-accent-blue: #146ef5;
+
+:root {
+  // Цвет текста
+  --color-text-primary: #{$c-black};
+  --color-text-inverted: #{$c-white};
+  --color-text-secondary: #{$c-gray-500};
+  --color-text-accent: #{$c-accent-blue};
+
+  // Цвета фона
+  --color-background-page: #{$c-white};
+  --color-background-inverted: #{$c-black};
+  --color-background-secondary: #{$c-gray-900};
+
+  --color-border-dark: #{$c-gray-700};
+}

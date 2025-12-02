@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <title>Даниил Петров – дизайнер и разработчик</title>
+    <link rel="stylesheet" href="src/styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="hero-title">
+                <span class="hero-title__word hero-title__word--first">Creative</span>
+                <span class="hero-title__word hero-title__word--second">Developer</span>
+            </h1>
+        </div>
+    </section>
+    <section class="section section--cases">
+        <div class="container grid">
+            <a href="#" class="case-card case-card--vertical grid-pos--v1" data-title="Лендинг ЖК Поинт Токсово">
+                <img src="/src/assets/images/case bg.jpg" alt="">
+            </a>
+            <div class="case-card case-card--infoText grid-pos--v2 case-card--pi-none">
+                <p class="text-indent-first">
+                    Даниил Петров – дизайнер и&nbsp;разработчик.<br><br>Cоединяю дизайн и&nbsp;технологии, создавая продуманные сайты и&nbsp;цифровые продукты. Работаю с&nbsp;агентствами и&nbsp;брендами, которые стремятся создавать лучшее
+                </p>
+            </div>
+            <a href="#" class="case-card case-card--horizontal grid-pos--v3" data-title="Лендинг привлечения инвестиций">
+                <img src="/src/assets/images/case bg.jpg" alt="">
+            </a>
+            <a href="#" class="case-card case-card--horizontal grid-pos--v4" data-title="Моб. приложение NAPPY Club">
+                <img src="/src/assets/images/case bg.jpg" alt="">
+            </a>
+            <a href="#" class="case-card case-card--horizontal grid-pos--v5" data-title="IT интегратор BOX-MOVING">
+                <video
+                    class="case-card__video"
+                    autoplay
+                    muted
+                    playsinline
+                    loop
+                    preload="auto"
+                >
+                    <source src="/src/assets/video/boxmoving-vid-compressed.mp4" type="video/mp4">
+                </video>
+            </a>
+            <a href="#" class="case-card case-card--vertical grid-pos--v6" data-title="Портал Тут Мурино">
+                <video
+                    class="case-card__video"
+                    autoplay
+                    muted
+                    playsinline
+                    loop
+                    preload="auto"
+                >
+                    <source src="/src/assets/video/tutmurino-compressed.mp4" type="video/mp4">
+                </video>
+            </a>
+            <a href="#" class="case-card case-card--horizontal grid-pos--v7" data-title="Лендинг отеля Архыз">
+                <img src="/src/assets/images/case bg.jpg" alt="">
+            </a>
+            <a href="#" class="case-card case-card--horizontal grid-pos--v8" data-title="Управление строительством">
+                <img src="/src/assets/images/case bg.jpg" alt="">
+            </a>
+            <div id="case-title-overlay"></div>
+        </div>
+    </section>
+    <!-- <section class="section section--animated-titles">
+        <div class="animated-title">
+            <div class="animated-title__container"><h3>Отзывы </h3></div>
+        </div>
+    </section> -->
+    <section class="section section--review">
+        <div class="container">
+            <div class="title-wrap title-wrap--inverted">
+                <h2>Отзывы</h2>
+            </div>
+            <div class="review-grid grid">
+                <div class="review-grid__content">
+                    <div class="swiper swiper--inverted">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <p class="swiper-slide--description">[1]</p>
+                                <p class="swiper-slide--text text-indent-first">
+                                    Мы запустили масштабный проект и&nbsp;для нас скорость создания сайта, с&nbsp;учетом всех наших запросов и&nbsp;потребностей, была на&nbsp;первом месте. Даниил выдержал все озвученные сроки, а&nbsp;его открытая позиция и&nbsp;готовность решать любые задачи в&nbsp;сочетании с&nbsp;очень приятным общением были для&nbsp;нас очень ценны. Так что мы уже на&nbsp;новой стадии внедрения дополнительного функционала сайта и&nbsp;проработке новых идей. Если делать сайт, то&nbsp;только с&nbsp;вами! Еще раз спасибо.
+                                </p>
+                                <div class="swiper-slide--info">
+                                    <p class="swiper-slide--author">
+                                        Виктор, руководитель «Тут&nbsp;Мурино»
+                                    </p>
+                                    <div class="swiper-slide--link-box">
+                                        <a href="https://tut-murino.ru/" class="swiper-slide--link hover-split-text" target="_blank" rel="noopener noreferrer">tut-murino.ru ↗</a>
+                                    </div>
+                                    <div class="swiper-slide--link-box">
+                                        <a href="https://point-toksovo.ru/" class="swiper-slide--link hover-split-text" target="_blank" rel="noopener noreferrer">point-toksovo.ru ↗</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="swiper-slide--description">[2]</p>
+                                <p class="swiper-slide--text text-indent-first">
+                                    Даниил проявил себя как внимательный, пунктуальный и&nbsp;вдумчивый профессионал, глубоко понимающий задачи и&nbsp;современные тенденции. Работа была выполнена качественно, а&nbsp;сотрудничество — комфортным. Рекомендуем Даниила как&nbsp;специалиста, который вникает в&nbsp;потребности заказчика и&nbsp;доводит проект до&nbsp;результата.
+                                </p>
+                                <div class="swiper-slide--info">
+                                    <p class="swiper-slide--author">
+                                        Алексей, руководитель ООО «ЦЭПУ»
+                                    </p>
+                                    <div class="swiper-slide--link-box">
+                                        <a href="/src/assets/reviews/Благодарственное письмо ЦЭПУ.pdf"
+                                        class="swiper-slide--link hover-split-text"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                        Полный отзыв ↗</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="swiper-slide--description">[3]</p>
+                                <p class="swiper-slide--text text-indent-first">
+                                    …работать было легко и приятно. Даниил быстро понимал задачи, предлагал решения буквально в&nbsp;процессе обсуждения и&nbsp;всегда попадал в&nbsp;нужное направление. Поразили скорость, ответственность и&nbsp;внимание к деталям. Результат получился современным и&nbsp;точным, а&nbsp;сотрудничество — комфортным. Спасибо, Даниил, продолжаем работать!
+                                </p>
+                                <div class="swiper-slide--info">
+                                    <p class="swiper-slide--author">
+                                        Николай, руководитель MARBOR
+                                    </p>
+                                    <div class="swiper-slide--link-box">
+                                        <a href="/src/assets/reviews/Благодарственное письмо Марбор.pdf"
+                                        class="swiper-slide--link hover-split-text"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                        Полный отзыв ↗</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper--nav">
+                            <div class="swiper-button-prev hover-split-text">← предыдущий</div>
+                            <div class="swiper-button-next hover-split-text">следующий →</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--experience">
+        <div class="container experience">
+            <div class="title-wrap">
+                <h2>Опыт</h2>
+            </div>
+            <div class="experience__gappery grid grid--gallery">
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+                <div class="experience__gappery-item"><img src="/src/assets/images/case bg.jpg" alt=""></div>
+            </div>
+            <div class="experience--clients-wrap grid grid--clients">
+                <p class="experience--clients-subtitle text-indent-first">
+                    Работал над масштабными проектами для&nbsp;лидерующих брендов РФ напрямую и&nbsp;в&nbsp;качестве суб-подрядчика
+                </p>
+                <div class="experience--clients-list">
+                    <div class="experience__client"><h4>пик</h4></div>
+                    <div class="experience__client"><h4>самолет</h4></div>
+                    <div class="experience__client"><h4>фск</h4></div>
+                    <div class="experience__client"><h4>ava</h4></div>
+                    <div class="experience__client"><h4>azimut</h4></div>
+                    <div class="experience__client"><h4>cosmos hotel</h4></div>
+                    <div class="experience__client"><h4>точно</h4></div>
+                    <div class="experience__client"><h4>зорге9</h4></div>
+                    <div class="experience__client"><h4>skillbox</h4></div>
+                    <div class="experience__client"><h4>вконтакте</h4></div>
+                    <div class="experience__client"><h4>интерфакс</h4></div>
+                    <div class="experience__client"><h4>р-фарм</h4></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--expertise">
+        <div class="container">
+            <div class="title-wrap title-wrap--inverted">
+                <h2>Экспертиза</h2>
+            </div>
+            <div class="service-card service-card--inverted">
+                <div class="service-card__index">[01]</div>
+                <div class="service-card__body">
+                    <div class="service-card__content"> 
+                        <h4>Лендинги<br>и промо</h4>
+                        <p class="service-card__text text-indent-first">
+                            Сайт под целевую аудиторию, учитывая особенности продукта и&nbsp;задачи бизнеса. Особые опыт в&nbsp;сфере недвижимости
+                        </p>
+                    </div>
+                    <div class="service-card__media">
+                        <img class="service-card__image" src="/src/assets/images/case bg.jpg" alt="">
+                    </div>
+                </div>
+                <div class="service-card__overlay"></div>
+            </div>
+            <div class="service-card service-card--inverted">
+                <div class="service-card__index">[02]</div>
+                <div class="service-card__body">
+                    <div class="service-card__content"> 
+                        <h4>Корпоративные сайты</h4>
+                        <p class="service-card__text text-indent-first">
+                            Сайт под целевую аудиторию, учитывая особенности продукта и&nbsp;задачи бизнеса. Особые опыт в&nbsp;сфере недвижимости
+                        </p>
+                    </div>
+                    <div class="service-card__media">
+                        <img class="service-card__image" src="/src/assets/images/case bg.jpg" alt="">
+                    </div>
+                </div>
+                <div class="service-card__overlay"></div>
+            </div>
+            <div class="service-card service-card--inverted">
+                <div class="service-card__index">[03]</div>
+                <div class="service-card__body">
+                    <div class="service-card__content"> 
+                        <h4>Интернет<br>магазины</h4>
+                        <p class="service-card__text text-indent-first">
+                            Сайт под целевую аудиторию, учитывая особенности продукта и&nbsp;задачи бизнеса. Особые опыт в&nbsp;сфере недвижимости
+                        </p>
+                    </div>
+                    <div class="service-card__media">
+                        <img class="service-card__image" src="/src/assets/images/case bg.jpg" alt="">
+                    </div>
+                </div>
+                <div class="service-card__overlay"></div>
+            </div>
+            <div class="service-card service-card--inverted">
+                <div class="service-card__index">[04]</div>
+                <div class="service-card__body">
+                    <div class="service-card__content"> 
+                        <h4>Дизайн<br>сервисов<br>и приложений</h4>
+                        <p class="service-card__text text-indent-first">
+                            Сайт под целевую аудиторию, учитывая особенности продукта и&nbsp;задачи бизнеса. Особые опыт в&nbsp;сфере недвижимости
+                        </p>
+                    </div>
+                    <div class="service-card__media">
+                        <img class="service-card__image" src="/src/assets/images/case bg.jpg" alt="">
+                    </div>
+                </div>
+                <div class="service-card__overlay"></div>
+            </div>
+            <div class="service-card service-card--inverted">
+                <div class="service-card__index">[05]</div>
+                <div class="service-card__body">
+                    <div class="service-card__content"> 
+                        <h4>Code<br>/ no-code<br>разработка</h4>
+                        <p class="service-card__text text-indent-first">
+                            Сайт под целевую аудиторию, учитывая особенности продукта и&nbsp;задачи бизнеса. Особые опыт в&nbsp;сфере недвижимости
+                        </p>
+                    </div>
+                    <div class="service-card__media">
+                        <img class="service-card__image" src="/src/assets/images/case bg.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="section section--contacts">
+        <div class="container">
+            <div class="title-wrap title-wrap--contacts">
+                <h2>Контакты</h2>
+            </div>
+            <div class="contact-info grid">
+                <div class="contact-content">
+                    <p class="contact-content__speach text-indent-first">
+                        Я открыт для сотрудничества с брендами, агентствами и дизайнерами. Если вам нужен надежный подрядчик для цифровой реализации ваших идей – давайте свяжемся.<br>Не стесняйтесь написать мне, чтобы организовать звонок — мне будет интересно узнать, над чем вы работаете
+                    </p>
+                    <div class="contact-content__links">
+                        <a class="hover-split-text" href="https://t.me/daniilpetrov1" target="_blank">Telegram</a>
+                        <a class="hover-split-text" href="https://api.whatsapp.com/send/?phone=381628909142&text&type=phone_number&app_absent=0" target="_blank">WhatsApp</a>
+                        <a class="hover-split-text" href="mailto:daniilpetrov.n1@gmail.com">daniilpetrov.n1@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <div id="case-title-overlay"></div> -->
+    <script type="module" src="/src/scripts/main.js"></script>
+
+    <!-- Подключение GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- Подключение ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</body>
+</html>

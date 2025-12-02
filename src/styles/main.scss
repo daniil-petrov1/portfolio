@@ -1,0 +1,23 @@
+// ABSTRACTS (Фундамент дизайн-системы)
+@use '00_abstracts/01_mixins' as *;
+@use '00_abstracts/02_variables' as *;
+
+// 1. BASE (Базовые, глобальные стили)
+@use '01_base/01_reset' as reset;
+@use '01_base/02_typography' as typography;
+@use '01_base/03_globals' as globals;
+
+
+// 2. THEMES (Механизм смены цветовой палитры)
+@use '02_themes/01_theme' as theme;
+
+
+// 3. COMPONENTS (Стили БЭМ-блоков)
+@use '03_components/heroTitle' as heroTitle;
+@use '03_components/caseCard' as caseCard;
+@use '03_components/review' as review;
+@use '03_components/experience' as experience;
+@use '03_components/expertise' as expertise;
+@use '03_components/contacts' as contacts;
+@use '03_components/_hover-split-text' as hover-split-text;
+@use '03_components/_animated-titles' as animated-titles;

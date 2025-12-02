@@ -1,0 +1,38 @@
+@use '../00_abstracts/02_variables' as *;
+
+body {
+  font-family: $font-family-base;
+  font-weight: $font-weight-medium;
+  line-height: 1.3; 
+}
+
+p {
+  font-family: $font-family-mono;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+// ЗАГОЛОВКИ
+
+h1, h2, h3, h4 {
+  font-family: $font-family-base;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+h1, h2 {
+  font-size: 12rem;
+  letter-spacing: -0.07em;
+}
+
+h3 {
+  font-size: 8.75rem;
+  letter-spacing: -0.07em;
+}
+
+h4 {
+  font-weight: $font-weight-extrabold;
+  font-size: 4.375rem;
+  letter-spacing: -0.05em;
+}

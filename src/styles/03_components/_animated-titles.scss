@@ -1,0 +1,30 @@
+@use '../00_abstracts/02_variables' as *;
+
+.animated-title {
+    display: flex;
+    align-items: center;
+
+    &__container {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        will-change: transform;
+        white-space: nowrap;
+    }
+} 
+
+.char {
+    position: relative;
+    display: inline-block;
+    will-change: transform;
+}
+
+@media (max-width: 1000px) {
+    h3 {
+        font-size: 3rem;
+        letter-spacing: 0;
+    }
+}

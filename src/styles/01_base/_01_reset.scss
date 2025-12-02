@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Удаление стандартных полей (margin) у базовых элементов.
+html, body,
+h1, h2, h3, h4, h5, h6,
+p,
+blockquote,
+figure,
+figcaption,
+ul, ol,
+dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  // Улучшение читаемости шрифта на разных устройствах.
+  -webkit-font-smoothing: antialiased;
+  min-height: 100svh;
+  
+  // Настройка для Flexbox-верстки (удобно для sticky footer или центрирования).
+  text-rendering: optimizeSpeed; 
+  line-height: 1.5;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+// Гарантирует, что изображения не выходят за пределы родительского контейнера.
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block; // Убирает лишний отступ под элементами
+  max-width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit; 
+}

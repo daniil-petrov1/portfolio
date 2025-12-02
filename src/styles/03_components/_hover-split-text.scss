@@ -1,0 +1,50 @@
+@use '../00_abstracts/02_variables' as *;
+
+.hover-split-text {
+    overflow: hidden;
+    display: inline-block;
+    height: 1.3em;
+    line-height: 1.3; //ЗАМЕНИТЬ
+}
+
+.hover-split-text:hover .letter,
+.hover-split-text.play .letter {
+    transform: translateY(-100%);
+}
+
+.hover-split-text .block:last-child {
+    color: var(--color-text-accent); //ЗАМЕНИТЬ
+}
+
+.hover-split-text .letter {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.024, 1);
+}
+
+.letter:nth-child(1) {transition-delay: 0s;}
+.letter:nth-child(2) {transition-delay: 0.02s;}
+.letter:nth-child(3) {transition-delay: 0.04s;}
+.letter:nth-child(4) {transition-delay: 0.06s;}
+.letter:nth-child(5) {transition-delay: 0.08s;}
+.letter:nth-child(6) {transition-delay: 0.10s;}
+.letter:nth-child(7) {transition-delay: 0.12s;}
+.letter:nth-child(8) {transition-delay: 0.14s;}
+.letter:nth-child(9) {transition-delay: 0.16s;}
+.letter:nth-child(10) {transition-delay: 0.18s;}
+.letter:nth-child(11) {transition-delay: 0.20s;}
+.letter:nth-child(12) {transition-delay: 0.22s;}
+.letter:nth-child(13) {transition-delay: 0.24s;}
+.letter:nth-child(14) {transition-delay: 0.26s;}
+.letter:nth-child(15) {transition-delay: 0.28s;}
+.letter:nth-child(16) {transition-delay: 0.30s;}
+.letter:nth-child(17) {transition-delay: 0.32s;}
+.letter:nth-child(18) {transition-delay: 0.34s;}
+.letter:nth-child(19) {transition-delay: 0.36s;}
+.letter:nth-child(20) {transition-delay: 0.38s;}
+.letter:nth-child(21) {transition-delay: 0.40s;}
+.letter:nth-child(22) {transition-delay: 0.42s;}
+.letter:nth-child(23) {transition-delay: 0.44s;}
+.letter:nth-child(24) {transition-delay: 0.46s;}
+.letter:nth-child(25) {transition-delay: 0.48s;}
+.letter:nth-child(26) {transition-delay: 0.50s;}
+.letter:nth-child(27) {transition-delay: 0.52s;}

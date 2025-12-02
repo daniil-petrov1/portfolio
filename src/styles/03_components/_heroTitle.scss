@@ -1,0 +1,15 @@
+@use '../00_abstracts/02_variables' as *;
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: $spacing-5xl;
+
+    &__word {
+        &--second {
+            text-align: end;
+            margin-top: -30px;
+            padding-right: 0.08em;
+        }
+    }
+}

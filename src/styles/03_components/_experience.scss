@@ -1,0 +1,31 @@
+@use '../00_abstracts/02_variables' as *;
+
+.experience {
+    &--clients-subtitle {
+        grid-column: 5/9;
+    }
+    &--clients-list {
+        grid-column: 3/11;
+    }
+    &--clients-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: $spacing-m;
+        row-gap: $spacing-s;
+        text-transform: uppercase;
+    }
+    &__client {
+        display: inline-flex;
+        text-transform: uppercase;
+    }
+    &__gappery {
+        padding-bottom: $spacing-6xl;
+    }
+    &__gappery-item {
+        grid-column: span 2;
+        width: 100%;
+        aspect-ratio: 3/4;
+    }
+}
+
