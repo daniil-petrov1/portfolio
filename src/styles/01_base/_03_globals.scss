@@ -74,7 +74,7 @@ body {
             text-indent: $spacing-3xl
         }
         @include respond($bp-mobile) {
-            text-indent: $spacing-5xl
+            text-indent: $spacing-3xl
         }
 }
 

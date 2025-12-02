@@ -36,6 +36,10 @@ h1, h2, h3, h4 {
   font-weight: $font-weight-bold;
   line-height: 1;
   text-transform: uppercase;
+
+  @include respond($bp-mobile) {
+    line-height: 1.1;
+  }
 }
 
 h1, h2 {
@@ -83,6 +87,7 @@ h4 {
     }
   @include respond($bp-tablet) {
         font-size: 2.25rem;
+        letter-spacing: -0.03em;
     }
   @include respond($bp-mobile) {
         font-size: 7vw;
