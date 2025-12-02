@@ -120,7 +120,7 @@
             font-size: 0.875rem;
         }
         @include respond($bp-mobile) {
-            font-size: 3vw;
+            font-size: 4vw;
         }
         @include respond($bp-mobileS) {
             font-size: 4.5vw;
@@ -144,7 +144,7 @@
             font-size: 0.875rem;
         }
         @include respond($bp-mobile) {
-            font-size: 3vw;
+            font-size: 4vw;
         }
         @include respond($bp-mobileS) {
             font-size: 4.5vw;
