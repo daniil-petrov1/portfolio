@@ -1,11 +1,34 @@
+@use '../00_abstracts/01_mixins' as *;
 @use '../00_abstracts/02_variables' as *;
 
 .experience {
     &--clients-subtitle {
         grid-column: 5/9;
+
+        @include respond($bp-desktop) {
+            grid-column: 4/10;
+        }
+        @include respond($bp-tablet) {
+            grid-column: 3/7;
+        }
+        @include respond($bp-mobile) {
+            grid-column: 1/5;
+            padding: 0 2rem;
+        }
     }
     &--clients-list {
         grid-column: 3/11;
+
+        @include respond($bp-desktop) {
+            grid-column: 3/11;
+        }
+        @include respond($bp-tablet) {
+            grid-column: 2/8;
+        }
+        @include respond($bp-mobile) {
+            grid-column: 1/5;
+            padding: 0 2rem;
+        }
     }
     &--clients-list {
         display: flex;
@@ -14,15 +37,31 @@
         column-gap: $spacing-m;
         row-gap: $spacing-s;
         text-transform: uppercase;
+
+        @include respond($bp-tablet) {
+            column-gap: $spacing-s;
+            row-gap: $spacing-xs;
+        }
+        @include respond($bp-mobile) {
+            column-gap: $spacing-s;
+            row-gap: $spacing-xs;
+        }
     }
     &__client {
         display: inline-flex;
         text-transform: uppercase;
     }
-    &__gappery {
+    &__gallery {
         padding-bottom: $spacing-6xl;
+
+        @include respond($bp-tablet) {
+            padding-bottom: $spacing-4xl;
+        }
+        @include respond($bp-mobile) {
+            padding-bottom: $spacing-4xl;
+        }
     }
-    &__gappery-item {
+    &__gallery-item {
         grid-column: span 2;
         width: 100%;
         aspect-ratio: 3/4;

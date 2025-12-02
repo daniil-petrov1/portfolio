@@ -1,3 +1,4 @@
+@use '../00_abstracts/01_mixins' as *;
 @use '../00_abstracts/02_variables' as *;
 
 html {
@@ -22,17 +23,58 @@ body {
     grid-template-columns: repeat(12, 1fr);
     padding: 0 $spacing-m;
 
+    @include respond($bp-desktop) {
+        grid-row-gap: $spacing-5xl;
+    }
+    @include respond($bp-tablet) {
+        grid-template-columns: repeat(8, 1fr);
+        grid-row-gap: $spacing-4xl;
+    }
+    @include respond($bp-mobile) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: $spacing-s;
+    }
+    @include respond($bp-mobileS) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     &--clients {
         grid-row-gap: $spacing-4xl;
     }
+
     &--gallery {
         grid-template-columns: repeat(18, 1fr);
         grid-row-gap: $spacing-m;
+
+        @include respond($bp-tabletL) {
+            grid-template-columns: repeat(14, 1fr);
+        }
+        @include respond($bp-tablet) {
+            grid-template-columns: repeat(14, 1fr);
+        }
+        @include respond($bp-mobile) {
+            grid-template-columns: repeat(8, 1fr);
+            grid-row-gap: $spacing-s;
+            grid-column-gap: $spacing-s;
+        }
     }
 }
 
 .text-indent-first {
         text-indent: $spacing-6xl;
+
+        @include respond($bp-desktop) {
+            text-indent: $spacing-5xl
+        }
+        @include respond($bp-tabletL) {
+            text-indent: $spacing-4xl
+        }
+        @include respond($bp-tablet) {
+            text-indent: $spacing-3xl
+        }
+        @include respond($bp-mobile) {
+            text-indent: $spacing-5xl
+        }
 }
 
 .section {
@@ -42,10 +84,24 @@ body {
     &--cases {
         padding: $spacing-m 0 $spacing-6xl 0;
         overflow: hidden;
+
+        @include respond($bp-tablet) {
+            padding-bottom: $spacing-4xl;
+        }
+        @include respond($bp-mobile) {
+            padding-bottom: $spacing-4xl;
+        }
     }
     &--review {
         background-color: var(--color-background-inverted);
         padding: $spacing-m 0 $spacing-6xl 0;
+
+        @include respond($bp-tablet) {
+            padding-bottom: $spacing-4xl;
+        }
+        @include respond($bp-mobile) {
+            padding-bottom: $spacing-4xl;
+        }
     }
     // &--animated-titles {
     //     overflow: hidden;
@@ -54,6 +110,13 @@ body {
     &--experience {
         background-color: var(--color-background);
         padding: $spacing-m 0 $spacing-6xl 0;
+
+        @include respond($bp-tablet) {
+            padding-bottom: $spacing-4xl;
+        }
+        @include respond($bp-mobile) {
+            padding-bottom: $spacing-4xl;
+        }
     }
     &--expertise {
         background-color: var(--color-background-inverted);
@@ -64,7 +127,20 @@ body {
     &--contacts {
         background-color: var(--color-background);
         padding: $spacing-m 0;
-        height: 100vh;
+        padding-bottom: $spacing-6xl;
+
+        @include respond($bp-desktopXL) {
+            height: 100vh;
+            padding-bottom: 0;
+        }
+        @include respond($bp-desktop) {
+            height: auto;
+            padding-bottom: $spacing-6xl;
+        }
+        @include respond($bp-tabletL) {
+            height: auto;
+            padding-bottom: $spacing-4xl;
+        }
     }
 }
 
@@ -72,6 +148,16 @@ body {
     display: flex;
     justify-content: center;
     padding-bottom: $spacing-6xl;
+
+    @include respond($bp-tabletL) {
+        padding-bottom: $spacing-5xl;
+    }
+    @include respond($bp-tablet) {
+        padding-bottom: $spacing-4xl;
+    }
+    @include respond($bp-mobile) {
+        padding-bottom: $spacing-4xl;
+    }
 
     &--inverted {
         color: var(--color-text-inverted);

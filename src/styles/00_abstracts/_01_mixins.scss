@@ -1,0 +1,14 @@
+// Breakpoints
+$bp-desktopXL: 1919px;
+$bp-desktopL: 1440px;
+$bp-desktop: 1280px;
+$bp-tabletL: 1024px;
+$bp-tablet: 768px;
+$bp-mobile: 480px;
+$bp-mobileS: 320px;
+
+@mixin respond($bp) {
+    @media (max-width: $bp) {
+        @content;
+    }
+}

@@ -1,3 +1,4 @@
+@use '../00_abstracts/01_mixins' as *;
 @use '../00_abstracts/02_variables' as *;
 
 .service-card {
@@ -8,6 +9,13 @@
     position: relative;
     transform-origin: center center;
 
+    @include respond($bp-tablet) {
+            height: 70svh;
+        }
+    @include respond($bp-mobile) {
+            height: 100svh;
+        }
+
     &--inverted {
         color: var(--color-text-inverted);
     }
@@ -16,22 +24,62 @@
         text-align: center;
         border-bottom: 1px solid var(--color-border-dark);
         color: var(--color-text-secondary);
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-family: $font-family-mono;
+
+        @include respond($bp-desktopXL) {
+            font-size: 1rem;
+        }
+        @include respond($bp-desktop) {
+            padding: $spacing-m 0;
+        }
+        @include respond($bp-tablet) {
+            font-size: 0.875rem;
+        }
+        @include respond($bp-mobile) {
+            font-size: 3vw;
+        }
+        @include respond($bp-mobileS) {
+            font-size: 4.5vw;
+        }
     }
     &__body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: $spacing-m;
         padding: $spacing-m $spacing-m $spacing-3xl $spacing-m;
+
+        @include respond($bp-tablet) {
+            height: 100%;
+        }
+        @include respond($bp-mobile) {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: $spacing-m;
+            gap: $spacing-l;
+        }
     }
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @include respond($bp-mobile) {
+            gap: $spacing-l;
+        }
     }
     &__text {
         padding-right: $spacing-6xl;
+
+        @include respond($bp-desktop) {
+            padding-right: $spacing-4xl;
+        }
+        @include respond($bp-tabletL) {
+            padding-right: $spacing-3xl;
+        }
+        @include respond($bp-tablet) {
+            padding-right: 0px;
+        }
     }
     &__media {
         width: 100%;

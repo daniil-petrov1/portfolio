@@ -1,3 +1,4 @@
+@use '../00_abstracts/01_mixins' as *;
 @use '../00_abstracts/02_variables' as *;
 
 .case-card {
@@ -17,6 +18,16 @@
     &--infoText {
         padding-top: $spacing-4xl;
         text-transform: uppercase;
+
+        @include respond($bp-tabletL) {
+            padding: $spacing-3xl 0;
+        }
+        @include respond($bp-mobile) {
+            padding: $spacing-2xl 0;
+        }
+        @include respond($bp-mobileS) {
+            padding: $spacing-xl 0;
+        }
     }
     &--pi-none {
         pointer-events: none;
@@ -37,23 +48,116 @@
 }
 
 .grid-pos {
-    &--v1 { grid-column: 2/6; }
-    &--v2 { grid-column: 8/12; }
+    &--v1 {
+        grid-column: 2/6;
+
+        @include respond($bp-tablet) {
+            grid-column: 1/5;
+        }
+        @include respond($bp-mobile) {
+            grid-column: 1/5;
+        }
+        @include respond($bp-mobileS) {
+            grid-column: 1/5;
+        }
+    }
+    &--v2 {
+        grid-column: 8/12;
+
+        @include respond($bp-tablet) {
+            grid-column: 6/9;
+        }
+        @include respond($bp-mobile) {
+            grid-column: 1/5;
+        }
+        @include respond($bp-mobileS) {
+            grid-column: 1/5;
+        }
+    }
     &--v3 {
         grid-column: 8/13;
         margin-top: calc(-1 * $spacing-6xl - 1.5rem);
+
+        @include respond($bp-tablet) {
+            grid-column: 3/9;
+            margin-top: 0;
+        }
+        @include respond($bp-mobile) {
+            grid-column: 1/5;
+        }
+        @include respond($bp-mobileS) {
+            grid-column: 1/5;
+        }
     }
-    &--v4 { grid-column: 2/12; }
-    &--v5 { grid-column: 1/7; }
+    &--v4 {
+        grid-column: 2/12;
+
+        @include respond($bp-tablet) {
+            grid-column: 1/9;
+        }
+        @include respond($bp-mobile) {
+            grid-column: 1/5;
+        }
+        @include respond($bp-mobileS) {
+            grid-column: 1/5;
+        }
+    }
+    &--v5 {
+        grid-column: 1/7;
+
+        @include respond($bp-tablet) {
+            grid-column: 1/7;
+        }
+        @include respond($bp-mobile) {
+            grid-column: 1/5;
+        }
+        @include respond($bp-mobileS) {
+            grid-column: 1/5;
+        }
+    }
     &--v6 {
         grid-column: 9/13;
         margin-top: calc($spacing-6xl + 10rem);
+
+        @include respond($bp-tablet) {
+            grid-column: 3/7;
+            margin-top: 0;
+        }
+        @include respond($bp-mobile) {
+            grid-column: 1/5;
+        }
+        @include respond($bp-mobileS) {
+            grid-column: 1/5;
+        }
     }
     &--v7 {
         grid-column: 1/6;
         margin-top: calc(-1 * $spacing-6xl - 1.5rem);
+
+        @include respond($bp-tablet) {
+            grid-column: 1/9;
+            margin-top: 0;
+        }
+        @include respond($bp-mobile) {
+            grid-column: 1/5;
+        }
+        @include respond($bp-mobileS) {
+            grid-column: 1/5;
+        }
     }
-    &--v8 { grid-column: 4/10; }
+    &--v8 {
+        grid-column: 4/10;
+
+        @include respond($bp-tablet) {
+            grid-column: 2/8;
+        }
+        @include respond($bp-mobile) {
+            grid-column: 1/5;
+        }
+        @include respond($bp-mobileS) {
+            grid-column: 1/5;
+        }
+    }
 }
 
 #case-title-overlay {

@@ -1,8 +1,20 @@
+@use '../00_abstracts/01_mixins' as *;
 @use '../00_abstracts/02_variables' as *;
 
 .review-grid {
     &__content {
         grid-column: 5/9;
+
+        @include respond($bp-desktop) {
+            grid-column: 4/10;
+        }
+        @include respond($bp-tablet) {
+            grid-column: 3/7;
+        }
+        @include respond($bp-mobile) {
+            grid-column: 1/5;
+            padding: 0 2rem;
+        }
     }
 }
 
@@ -22,8 +34,24 @@
         justify-content: space-between;
         color: var(--color-text-secondary)!important;
         margin-top: $spacing-2xl;
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-family: $font-family-mono;
+
+        @include respond($bp-desktopXL) {
+            font-size: 1rem;
+        }
+        @include respond($bp-tabletL) {
+            margin-top: $spacing-2xl!important;
+        }
+        @include respond($bp-tablet) {
+            font-size: 0.875rem;
+        }
+        @include respond($bp-mobile) {
+            font-size: 3vw;
+        }
+        @include respond($bp-mobileS) {
+            font-size: 4.5vw;
+        }
     }
     .swiper-button-prev,
     .swiper-button-next {
@@ -63,20 +91,64 @@
     &--description {
         display: inline-flex;
         color: var(--color-text-secondary);
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-bottom: $spacing-l!important;
+
+        @include respond($bp-desktopXL) {
+            font-size: 1rem;
+        }
+        @include respond($bp-tablet) {
+            font-size: 0.875rem;
+            margin-bottom: 0!important;
+        }
+        @include respond($bp-mobile) {
+            font-size: 3vw;
+            margin-bottom: 0!important;
+        }
+        @include respond($bp-mobileS) {
+            font-size: 4.5vw;
+        }
     }
     &--author {
         color: var(--color-text-secondary);
-        font-size: 1rem;
+        font-size: 1.5rem;
+
+        @include respond($bp-desktopXL) {
+            font-size: 1rem;
+        }
+        @include respond($bp-tablet) {
+            font-size: 0.875rem;
+        }
+        @include respond($bp-mobile) {
+            font-size: 3vw;
+        }
+        @include respond($bp-mobileS) {
+            font-size: 4.5vw;
+        }
     }
     &--info {
         display: flex;
         flex-direction: column;
         font-family: $font-family-mono;
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: var(--color-text-secondary);
         margin-top: $spacing-l!important;
+
+        @include respond($bp-desktopXL) {
+            font-size: 1rem;
+        }
+        @include respond($bp-tabletL) {
+            margin-top: $spacing-m!important;
+        }
+        @include respond($bp-tablet) {
+            font-size: 0.875rem;
+        }
+        @include respond($bp-mobile) {
+            font-size: 3vw;
+        }
+        @include respond($bp-mobileS) {
+            font-size: 4.5vw;
+        }
     }
     &--link-box {
         display: inline-flex;

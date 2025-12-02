@@ -1,3 +1,4 @@
+@use '../00_abstracts/01_mixins' as *;
 @use '../00_abstracts/02_variables' as *;
 
 body {
@@ -8,8 +9,24 @@ body {
 
 p {
   font-family: $font-family-mono;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   text-transform: uppercase;
+
+  @include respond($bp-desktopXL) {
+        font-size: 1.25rem;
+    }
+  @include respond($bp-tabletL) {
+        font-size: 1.1rem;
+    }
+  @include respond($bp-tablet) {
+        font-size: 1rem;
+    }
+  @include respond($bp-mobile) {
+        font-size: 3.5vw;
+    }
+  @include respond($bp-mobileS) {
+        font-size: 5.5vw;
+    }
 }
 
 // ЗАГОЛОВКИ
@@ -22,17 +39,55 @@ h1, h2, h3, h4 {
 }
 
 h1, h2 {
-  font-size: 12rem;
+  font-size: 15rem;
   letter-spacing: -0.07em;
+
+  @include respond($bp-desktopXL) {
+        font-size: 12rem;
+    }
+  @include respond($bp-desktop) {
+        font-size: 10rem;
+    }
+  @include respond($bp-tabletL) {
+        font-size: 8rem;
+    }
+  @include respond($bp-tablet) {
+        font-size: 6rem;
+    }
+  @include respond($bp-mobile) {
+        font-size: 15vw;
+    }
+  @include respond($bp-mobileS) {
+        font-size: 20vw;
+    }
 }
 
 h3 {
-  font-size: 8.75rem;
+  font-size: 10rem;
   letter-spacing: -0.07em;
 }
 
 h4 {
   font-weight: $font-weight-extrabold;
-  font-size: 4.375rem;
+  font-size: 5.5rem;
   letter-spacing: -0.05em;
+
+  @include respond($bp-desktopXL) {
+        font-size: 4.375rem;
+    }
+  @include respond($bp-desktop) {
+        font-size: 3.75rem;
+    }
+  @include respond($bp-tabletL) {
+        font-size: 3rem;
+    }
+  @include respond($bp-tablet) {
+        font-size: 2.25rem;
+    }
+  @include respond($bp-mobile) {
+        font-size: 7vw;
+    }
+  @include respond($bp-mobileS) {
+        font-size: 10vw;
+    }
 }
