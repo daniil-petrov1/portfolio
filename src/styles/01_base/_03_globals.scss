@@ -167,3 +167,9 @@ body {
         padding-bottom: $spacing-2xl!important;
     }
 }
+
+.mobile-hide {
+    @include respond($bp-mobile) {
+        display: none;
+    }
+}
