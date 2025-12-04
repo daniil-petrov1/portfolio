@@ -5,10 +5,16 @@ import { initAnimatedTitlesAnimations } from './modules/animated-titles.js';
 import { initCaseCardHover } from './modules/case-card.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    initExpertiseAnimations();
-    initHoverTextAnimations();
+
+    const isMobile = window.innerWidth <= 1024;
+
+    if (!isMobile) {
+        initExpertiseAnimations();
+        initHoverTextAnimations();
+        initAnimatedTitlesAnimations();
+        initCaseCardHover();
+    }
+
     initReviewsSlider();
-    initAnimatedTitlesAnimations();
-    initCaseCardHover();
     console.log('App initialized!');
 });
