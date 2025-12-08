@@ -17,5 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initReviewsSlider();
-    console.log('App initialized!');
+    
+    if (import.meta.env.DEV) {
+        console.log('App initialized!');
+    }
 });

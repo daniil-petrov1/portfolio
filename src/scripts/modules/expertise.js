@@ -1,5 +1,8 @@
 // Карточки услуг
 
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 export function initExpertiseAnimations() { 
     gsap.registerPlugin(ScrollTrigger);
 
