@@ -1,3 +1,4 @@
+import '../styles/main.scss';
 import { initExpertiseAnimations } from './modules/expertise';
 import { initHoverTextAnimations } from './modules/hover-split-text';
 import { initReviewsSlider } from './modules/swiper.js';
